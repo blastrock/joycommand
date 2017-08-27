@@ -1,0 +1,24 @@
+- buttons: ["a"]
+  command: "echo cycle pause | socat - ~/.mpv/socket"
+- buttons: ["y"]
+  command: "echo cycle fullscreen | socat - ~/.mpv/socket"
+
+- buttons: ["leftshoulder", "left"]
+  command: "echo sub-seek -1 | socat - ~/.mpv/socket"
+- buttons: ["leftshoulder", "right"]
+  command: "echo sub-seek +1 | socat - ~/.mpv/socket"
+
+- buttons: ["lefttrigger", "left"]
+  command: "echo add chapter -1 | socat - ~/.mpv/socket"
+- buttons: ["lefttrigger", "right"]
+  command: "echo add chapter +1 | socat - ~/.mpv/socket"
+
+- buttons: ["left"]
+  command: "echo seek -10 | socat - ~/.mpv/socket"
+- buttons: ["right"]
+  command: "echo seek +10 | socat - ~/.mpv/socket"
+
+- buttons: ["up"]
+  command: "echo add ao-volume +10 | socat - ~/.mpv/socket"
+- buttons: ["down"]
+  command: "echo add ao-volume -10 | socat - ~/.mpv/socket"
